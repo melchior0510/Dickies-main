@@ -1,0 +1,46 @@
+header {
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #cccccc;
+    padding: 10px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.5em;
+    color: #333333;
+}
+
+main {
+    margin: 20px 0;
+}
+
+h2 {
+    margin: 0;
+    font-size: 2em;
+    color: #000000;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #555555;
+}
+
+ul {
+    margin: 15px 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #0d0d0e;
+}
+
+a:hover {
+    text-decoration: underline;
+}
