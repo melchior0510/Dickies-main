@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <title>Хэрэглэгчийн Хуудас</title>
+  <link rel="stylesheet" href="iteminfo.css">
+  <style>
+    
+    body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.mainbar1{
+  background-color: white;
+  width: 100%;
+  height: 100vh;
+  padding-top: 130px;
+}
+.mainbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a1a1a;
+  color: white;
+  padding: 10px 20px;
+}
+
+.left-text {
+  font-weight: bold;
+}
+
+.left-text span {
+  font-weight: normal;
+  margin-left: 8px;
+}
+
+.right-menu {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-size: 14px;
+}
+
+.right-menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.right-menu a:hover {
+  text-decoration: underline;
+}
+
+.flag {
+  width: 24px;
+  height: auto;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  border-bottom: 1px solid #ddd;
+  background-color: white;  
+}
+.test
+{
+    position: fixed;
+    width: 100%;
+}
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-left img {
+  height: 40px;
+}
+
+.nav-left a {
+  color: #111;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.nav-left a.sale {
+  color: darkred;
+  font-weight: bold;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  background-color: #f2f2f2;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  background: transparent;
+  margin-left: 6px;
+  font-size: 14px;
+}
+
+.nav-icon {
+  font-size: 20px;
+  cursor: pointer;
+}
+.help-section {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    font-family: "Arial", sans-serif;
+  }
+  
+  .help-section h2 {
+    margin-left: 20px;
+    font-size: 32px;
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+  
+  .support-info {
+    display: flex;
+    gap: 40px;
+    padding: 10px 10px;
+    align-items: center;
+    flex-wrap: wrap;
+
+  }
+  
+  .left-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  
+  .help-table {
+    width: 100%;
+    max-width: 1200px;
+    border-collapse: collapse;
+    font-family: sans-serif;
+    font-size: 12px;
+    color: #222;
+    margin-top: 20px;
+  }
+  
+  .help-table td {
+    padding: 10px;
+    vertical-align: top;
+  }
+  
+  .help-table a {
+    color: #000;
+    text-decoration: underline;
+  }
+  
+  .live-chat {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  
+  .help-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+    margin-top: 30px;
+  }
+  
+  .help-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 130px;
+  }
+  
+  .help-table img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+  
+  .help-item p {
+    font-weight: bold;
+    font-family: "Courier New", monospace;
+    font-size: 16px;
+  }  
+
+.footer {
+background-color: #000000;
+color: #fff;
+padding: 60px 40px;
+font-family: 'Arial', sans-serif, 'Big Text';
+}
+
+.footer-top {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+gap: 40px;
+}
+
+.footer-logo {
+width: 100px;
+margin-bottom: 20px;
+}
+
+h3 {
+font-size: 1.5rem;
+margin-bottom: 10px;
+}
+
+.subscribe {
+display: flex;
+background-color: #222;
+border-radius: 4px;
+overflow: hidden;
+margin-bottom: 20px;
+}
+
+.subscribe input {
+border: none;
+padding: 10px;
+background: none;
+color: #fff;
+flex: 1;
+min-width: 280px;
+}
+
+.footer-medium{
+    padding-top: 180px;
+}
+.footer-medium1{
+    padding-top: 70px;
+}
+.subscribe button {
+padding: 10px 15px;
+background-color: #444;
+color: white;
+border: none;
+cursor: pointer;
+}
+
+.social-icons i {
+font-size: 18px;
+margin-right: 10px;
+cursor: pointer;
+}
+
+.footer-columns {
+display: flex;
+gap: 60px;
+flex-wrap: wrap;
+}
+
+.footer-col h4 {
+font-size: 0.9rem;
+margin-bottom: 15px;
+font-weight: bold;
+text-transform: uppercase;
+}
+
+.footer-col ul {
+list-style: none;
+padding: 0;
+}
+
+.footer-col li {
+margin-bottom: 10px;
+font-size: 0.9rem;
+cursor: pointer;
+}
+.footer-brand{
+  margin-bottom: 12%;
+}
+.footer-bottom {
+display: flex;
+justify-content: space-between;
+margin-top: 40px;
+flex-wrap: wrap;
+font-size: 0.8rem;
+color: #aaa;
+}
+
+.footer-bottom a {
+color: #aaa;
+margin-left: 15px;
+text-decoration: underline;
+}
+.b-footer_top-title {
+font-size: 24px;
+font-weight: 700;
+letter-spacing: 0;
+line-height: 30px;
+font-family: "Big Text";
+max-width: 400px;
+margin-left: 55%;
+padding-top: 50px;
+}
+      
+  </style>
+</head>
+<body>
+<section class="test">
+  <header class="mainbar">
+    <div class="left-text">
+      2 for $25 <span><strong>Women's T-Shirts</strong> <a href="#" style="color: white; text-decoration: underline;">Shop Now</a></span>
+    </div>
+
+    <div class="right-menu">
+      <a href="#">📍 Find a Store</a>
+      <a href="#">👥 Dickies for Business</a>
+      <a href="#">💬 Live Chat</a>
+      <a href="#">❓ Help</a>
+      <a href="#">👤 Log In</a>
+      <a href="#">Join Us</a>
+      <img class="flag" src="/imgs/Flag_of_Mongolia.svg.png" alt="MGL Flag">
+    </div>
+  </header>   
+
+  <nav class="navbar">
+    <div class="nav-left">
+      <img src="/imgs/dickiesLogo-removebg-preview.png" alt="Dickies Logo"/>  
+      <a href="#"><b>Men</b></a>
+      <a href="#"><b>Women</b></a>
+      <a href="#"><b>Kids</b></a>
+      <a href="#"><b>Scrubs</b></a>
+      <a href="#" class="sale"><b>Sale</b></a>
+      <a href="#"><b>Pants Finder</b></a>
+    </div>
+
+    <div class="nav-right">
+      <div class="search-box">
+        🔍 <input type="text" placeholder="Search">
+      </div>
+      <div class="nav-icon">🔖</div>
+      <div class="nav-icon">🛒</div>
+    </div>
+  </nav>
+</section>
+  <main class="mainbar1">
+    <!--this is main bar-->
+    <div class="breadcrumbs">
+        Home / Men / Pants / Work Pants / 874™ Pro Series Work Pants
+      </div><br></br>
+    <div class="product-container">
+        <div class="product-image" style="min-width: 650px; margin-left: -5%;padding: 0%;">
+          <img src="https://images.dickies.com/is/image/DickiesBrand/874-pro-series-work-pants-874-16-1?$product-image$" alt="874™ Pro Series Work Pants"  />
+        </div>
+        <div class="product-info">
+          <div class="product-header">
+            <a href="#">View all Pro Series Collection</a>
+          </div>
+    
+          <h1>874™ Pro Series Work Pants</h1>
+    
+          <div class="product-rating">
+            ★★★★☆ 3.9 (101) <a href="#">Write a review</a>
+          </div>
+    
+          <div class="product-price">$39.99 - $42.99</div>
+    
+          <div class="klarna-info">
+            4 Payments Of $9.99 At 0% Interest With <span class="klarna">Klarna</span> <a href="#">Learn More</a>
+          </div>
+    
+          <div class="color-selector">
+            <div class="selector-label">Color</div>
+            <div class="color-options">
+              <div class="color-option black" title="Black"></div>
+              <div class="color-option navy" title="Navy"></div>
+              <div class="color-option tan" title="Tan"></div>
+            </div>
+          </div>
+    
+          <div class="size-selector">
+            <div class="selector-label">Waist</div>
+            <a href="#" class="size-guide">Size Guide</a>
+            <div class="size-options">
+              <button>28</button>
+              <button>29</button>
+              <button>30</button>
+              <button>31</button>
+              <button>32</button>
+              <button>33</button>
+              <button>34</button>
+              <button>36</button>
+              <button>38</button>
+              <button>40</button>
+              <button>42</button>
+              <button>44</button>
+              <button>46</button>
+              <button>48</button>
+            </div>
+          </div>
+    
+          <div class="inseam-selector">
+            <div class="selector-label">Inseam</div>
+            <div class="inseam-options">
+              <button>30</button>
+              <button>32</button>
+              <button>34</button>
+            </div>
+          </div>
+    
+          <div class="quantity-selector">
+            <button>-</button>
+            <span>1</span>
+            <button>+</button>
+          </div>
+    
+          <button class="add-to-cart-button">Add to Cart</button>
+          <button class="save-for-later-button">Save For Later</button>
+        </div>
+      </div><br></br>
+
+
+      <div class="product-container">
+        <div class="product-images">
+          <img src="https://images.dickies.com/is/image/DickiesBrand/874-pro-series-work-pants-874-16-1?$product-image$" alt="Product Image 1">
+          <img src="https://images.dickies.com/is/image/DickiesBrand/874-pro-series-work-pants-874-16-1?$product-image$" alt="Product Image 2">
+          <img src="https://images.dickies.com/is/image/DickiesBrand/874-pro-series-work-pants-874-16-1?$product-image$" alt="Product Image 3">
+          <img src="https://images.dickies.com/is/image/DickiesBrand/874-pro-series-work-pants-874-16-1?$product-image$" alt="Product Image 4">
+        </div>
+        <div class="product-description">
+          <div class="free-shipping">
+            Free Shipping over $50 & Free Returns<br>
+            <a href="#">Sign in</a> or <a href="#">join</a> to get free shipping on all orders!
+          </div>
+    
+          <div class="description-section">
+            <div class="description-header">
+              Description
+              <span class="toggle-button">-</span>
+            </div>
+            <div class="description-content">
+              The Pro Series collection evolves our classic workwear, with styles featuring modern fits and materials designed for increased mobility to meet the needs of today's worker. The 874™ Pro Series work pants feature a regular fit through the seat and thigh with a tapered leg style. They have a Flex waistband constructed for added mobility and offer a lasting look with a stain release, fade resistance, and quick-drying fabric to help you stay dry from sweat. A convenient zippered pocket allows you to keep essentials stored securely and within easy reach.
+              <div class="item-id">Item ID: A85ZE</div>
+            </div>
+          </div>
+    
+          <div class="expandable-section">
+            <div class="section-header">
+              Product Details
+              <span class="toggle-button">+</span>
+            </div>
+            <div class="section-content">
+              [Product details go here]
+            </div>
+          </div>
+    
+          <div class="expandable-section">
+            <div class="section-header">
+              Fit Information
+              <span class="toggle-button">+</span>
+            </div>
+            <div class="section-content">
+              [Fit information goes here]
+            </div>
+          </div>
+    
+          <div class="expandable-section">
+            <div class="section-header">
+              Material & Care
+              <span class="toggle-button">+</span>
+            </div>
+            <div class="section-content">
+              [Material and care information goes here]
+            </div>
+            <div class="icon-grid">
+                <div class="icon-item">
+                  <img src="https://img.icons8.com/ios/50/000000/t-shirt.png" alt="Big & Tall">
+                  <span><p>Big &amp; Tall</p></span>
+                </div>
+                <div class="icon-item">
+                  <img src="https://img.icons8.com/ios/50/000000/clean.png" alt="Stain Release">
+                  <span><p>Stain Release</p></span>
+                </div>
+                <div class="icon-item">
+                  <img src="https://img.icons8.com/ios/50/000000/bright-moon.png" alt="Fade Resistant">
+                  <span><p>Fade Resistant</p></span>
+                </div>
+                <div class="icon-item">
+                  <img src="https://img.icons8.com/ios/50/000000/smartphone-tablet.png" alt="Cell Phone Pocket">
+                  <span><p>Cell Phone Pocket</p></span>
+                </div>
+                <div class="icon-item" >
+                  <img src="https://img.icons8.com/ios/50/000000/expand-arrow--v1.png" alt="Mobility">
+                  <span><p>Mobility</p></span>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="reviews-container">
+        <h1>Reviews</h1><hr></hr>
+        <div class="rating-overview">
+          <div class="rating-snapshot">
+            <h2>Rating Snapshot</h2>
+            <p>Select a row below to filter reviews.</p>
+            <div class="rating-bar">5 stars <div class="bar"><div class="bar-fill" style="width: 56%;"></div></div> 57</div>
+            <div class="rating-bar">4 stars <div class="bar"><div class="bar-fill" style="width: 14%;"></div></div> 14</div>
+            <div class="rating-bar">3 stars <div class="bar"><div class="bar-fill" style="width: 9%;"></div></div> 9</div>
+            <div class="rating-bar">2 stars <div class="bar"><div class="bar-fill" style="width: 8%;"></div></div> 8</div>
+            <div class="rating-bar">1 stars <div class="bar"><div class="bar-fill" style="width: 13%;"></div></div> 13</div>
+          </div>
+          <div class="overall-rating">
+            <h2>Overall Rating</h2>
+            <div class="rating-score">3.9 ★★★★☆</div>
+            <p>101 Reviews</p>
+          </div>
+          <div class="review-product">
+            <h2>Review This Product</h2>
+            <div class="review-stars">☆ ☆ ☆ ☆ ☆</div>
+            <p class="note">Adding a review will require a valid email for verification</p>
+          </div>
+        </div><hr></hr>
+    
+        <div class="average-ratings">
+          <div class="avg-section">
+            <strong>Quality</strong><br>4.3
+          </div>
+          <div class="avg-section">
+            <strong>Value</strong><br>4.3
+          </div>
+          <div class="avg-section">
+            <strong>Comfort</strong><br>4.1
+          </div>
+          <div class="avg-section">
+            <strong>Fit</strong><br>
+            <div class="fit-bar">
+              <div class="fit-indicator"></div>
+            </div>
+            <small>Runs Small — Runs Large</small>
+          </div>
+        </div>
+    
+        <div class="filter-section">
+          <div>
+            <label for="rating">Filter Reviews:</label>
+            <select id="rating">
+              <option>Rating</option>
+            </select>
+            <select id="region">
+              <option>Region</option>
+            </select>
+          </div>
+          <div>
+            Sort by
+            <select>
+              <option>Most Recent</option>
+            </select>
+          </div>
+        </div>
+    
+        <p>1 – 10 of 101 Reviews</p>
+      </div>
+
+
+  <section class="help-section">
+    <h2>Need Help?</h2>
+    
+    <div class="support-info">
+      <table class="help-table">
+        <tr>
+          <td>Monday to Friday</td>
+          <td><strong>1-800-Dickies (342-5437)</strong></td>
+        </tr>
+        <tr>
+          <td>8am - 6pm CT</td>
+          <td><a href="mailto:us_customer_care@dickies.com">us_customer_care@dickies.com</a></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Chat Available: 8:00am - 6pm CT Monday to Friday</td>
+        </tr>
+        <tr>
+          <td></td><td colspan="2">
+            <a href="#" class="live-chat">💬Live Chat</a>
+          </td>
+        </tr>
+      </table>
+      <table class="help-table">
+        <tr>
+          <td><img src="/imgs/mail.png" alt="Contact Icon"><p>Contact Us</p></td><td> <img src="/imgs/order.png" alt="Track Order"><p>Track Order</p></td><td><img src="/imgs/box.png" alt="Shipping"><p>Shipping & Returns</p></td><td><img src="/imgs/AQ.png" alt="FAQs"><p>FAQs</p></td>
+        </tr>
+      </table>
+    </div>    
+    </div>
+  </section>
+  
+
+  <footer class="footer">
+    <h2 class="b-footer_top-title">Quality Workwear Since 1922</h2>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="/imgs/logo.jpg" alt="Dickies Logo" class="footer-logo" />
+        <h3>Stay Connected</h3>
+        <div class="subscribe">
+          <input type="email" placeholder="Email Address"/>
+          <button>&rarr;</button>
+        </div>
+        <div class="social-icons">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-pinterest-p"></i>
+          <i class="fab fa-youtube"></i>
+        </div>
+      </div>
+  
+      <div class="footer-columns">
+        <div class="footer-col">
+          <h4>COMPANY INFO</h4>
+          <ul>
+            <li>About Dickies</li>
+            <li>Media Inquiries</li>
+            <li>Careers</li>
+            <li>CA Supply Chains Act</li>
+            <p class="footer-medium">
+              📍Find a Store
+            </p>
+          </ul>
+        </div>
+  
+        <div class="footer-col">
+          <h4>CUSTOMER SERVICE</h4>
+          <ul>
+            <li>💬 Live Chat</li>
+            <li>FAQ</li>
+            <li>Contact Us</li>
+            <li>Check Order Status</li>
+            <li>E-Gift Card</li>
+            <li>Coupons & Promotions</li>
+            <li>Returns</li>
+            <li>Shipping & Delivery</li>
+            <p class="footer-medium1">
+              👥Dickies for Business
+            </p>
+          </ul>
+        </div>
+  
+        <div class="footer-col">
+          <h4>DICKIES STORIES</h4>
+          <ul>
+            <li>Skate</li>
+            <li>Ambassadors</li>
+            <li>Dickies Makers</li>
+            <li>Collaborations</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <div class="footer-left">
+        ©2025 Williamson-Dickie Mfg., a VF Company Quality Workwear Since 1922
+      </div>
+      <div class="footer-right">
+        <a href="#">Accessibility Statement</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Your Privacy Choices</a>
+        <a href="#">Notice at Collection</a>
+      </div>
+    </div>
+  </footer>
+  
+</body>
+</html>
