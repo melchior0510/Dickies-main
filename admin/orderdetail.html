@@ -1,0 +1,127 @@
+<!-- dashboard.html -->
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <title>Order details</title>
+  <link rel="stylesheet" href="admin-style.css">
+  <link rel="stylesheet" href="orderdetail.css">
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>Admin</h2>
+      <ul>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="categories.html">Product Categories</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="orders.html">Orders</a></li>
+        <li><a href="payments.html">Payments</a></li>
+        <li><a href="customers.html">Customers</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="login.html">Log in</a></li>
+      </ul>
+    </aside>
+    <main class="main-content">
+      <header class="top-bar">
+        <h1>Order details</h1>
+        
+        <div class="order-details">
+          <div class="header">
+              <div>
+                  <h2>Order details</h2>
+                  <p><i class="calendar-icon"></i> Wed, Aug 13, 2020, 4:34 PM</p>
+                  <small>#ID 3453012</small>
+              </div>
+              <div class="status">
+                  <select>
+                      <option>Change status</option>
+                  </select>
+                  <button>Save</button>
+              </div>
+          </div>
+  
+          <div class="info-cards">
+              <div class="card">
+                  <h4>Customer</h4>
+                  <p><strong>John Alexander</strong></p>
+                  <p>alex@example.com</p>
+                  <p>+998 99 22123456</p>
+                  <a href="#">View profile</a>
+              </div>
+  
+              <div class="card">
+                  <h4>Customer</h4>
+                  <p>Shipping: Fargo express</p>
+                  <p>Payment method: Card card</p>
+                  <p>Status: <span class="status-text">Status</span></p>
+                  <a href="#">Download</a>
+              </div>
+  
+              <div class="card">
+                  <h4>Deliver to</h4>
+                  <p>City: Tashkent, Uzbekistan</p>
+                  <p>Street: Beruniy 369</p>
+                  <p>Address: Block A, House 123, Floor 2</p>
+                  <a href="#">Open map</a>
+              </div>
+          </div>
+  
+          <div class="product-table">
+              <table>
+                  <thead>
+                      <tr>
+                          <th>Product</th>
+                          <th>Quantity</th>
+                          <th>Unit Price</th>
+                          <th>Total</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td>Supreme helinox chair one</td>
+                          <td>2</td>
+                          <td>$43.50</td>
+                          <td>$87.00</td>
+                      </tr>
+                      <tr>
+                          <td>Gopro hero 7</td>
+                          <td>1</td>
+                          <td>$43.50</td>
+                          <td>$87.00</td>
+                      </tr>
+                  </tbody>
+              </table>
+  
+              <div class="totals">
+                  <p>Subtotal: <span>$973.35</span></p>
+                  <p>Shipping cost: <span>$10.00</span></p>
+                  <p class="grand-total">Subtotal: <span>$983.00</span></p>
+                  <span class="payment-status">Payment made</span>
+              </div>
+          </div>
+  
+          <div class="bottom-section">
+              <div class="payment-info">
+                  <h4>Payment info</h4>
+                  <p><strong>Master Card **** **** 4768</strong></p>
+                  <p>Business name: Master Card, Inc.</p>
+                  <p>Phone: +1 (800) 555-154-52</p>
+              </div>
+  
+              <div class="notes">
+                  <h4>Notes</h4>
+                  <textarea placeholder="Type here"></textarea>
+                  <button>Save note</button>
+              </div>
+          </div>
+      </div>
+
+
+      <footer class="footer">
+        <p>© 2025 Онлайн Дэлгүүр</p>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>

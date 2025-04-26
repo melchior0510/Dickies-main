@@ -1,0 +1,114 @@
+<!-- orders.html -->
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <title>Orders</title>
+  <link rel="stylesheet" href="admin-style.css">
+  <link rel="stylesheet" href="order.css">
+
+
+  
+
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>Admin</h2>
+      <ul>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="categories.html">Product Categories</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li class="active"><a href="orders.html">Orders</a></li>
+        <li><a href="payments.html">Payments</a></li>
+        <li><a href="customers.html">Customers</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="login.html">Log In</a></li>
+      </ul>
+    </aside>
+    <main class="main-content">
+      <header class="top-bar">
+        <h1>Orders</h1>
+      </header>
+      <br>
+
+      <body>
+        <div class="header">
+          <div>
+            <div class="tabs">
+              <a href="orders.html"><span class="tab active">All orders</span></a>
+              <a href="comleted.html"><span class="tab">Completed</span></a>
+              <a href="pending.html"><span class="tab">Pending</span></a>
+              <a href="canceled.html"><span class="tab">Canceled</span></a>
+            </div>
+          </div>
+          <select class="dropdown">
+            <option>Mar - April,2021</option>
+            <option>Jan - Feb,2021</option>
+            <option>May - June,2021</option>
+          </select>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Order ID</th>
+              <th>Product Name</th>
+              <th>Address</th>
+              <th>Date</th>
+              <th>Price</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>#78522135</td>
+              <td><img class="product-img" src="https://www.dickies.com/dw/image/v2/AAYI_PRD/on/demandware.static/-/Sites-master-catalog-dickies/default/dw74508d94/images/main/TJ15_DB_FR.jpg?sw=1480&sh=1480&sm=cut&q=65" alt="jacket"> jacket</td>
+              <td>351 Shearwood Forest Drive</td>
+              <td>20/03/2021</td>
+              <td>$376.00</td>
+              <td><span class="status complete">Complete</span></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>#78522135</td>
+              <td><img class="product-img" src="https://www.dickies.com/dw/image/v2/AAYI_PRD/on/demandware.static/-/Sites-master-catalog-dickies/default/dw9c95838b/images/main/A862O_0DS_FR.jpg?sw=1480&sh=1480&sm=cut&q=65" alt="pants"> pants</td>
+              <td>6391 Elgin St. Celina</td>
+              <td>21/03/2021</td>
+              <td>$276.00</td>
+              <td><span class="status pending">Pending</span></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>#78522135</td>
+              <td><img class="product-img" src="https://www.dickies.com/long-sleeve-work-shirts/long-sleeve-work-shirt/574.html" alt="shirt"> shirt</td>
+              <td>8502 Preston Rd. Inglewood</td>
+              <td>01/04/2021</td>
+              <td>$300.00</td>
+              <td><span class="status canceled">Canceled</span></td>
+            </tr>
+   
+          </tbody>
+        </table>
+        <div class="entries-info">
+          Showing 1 to 3 of 3 entries
+        </div>
+        <div class="pagination">
+          <button>Previous</button>
+          <span class="page active">1</span>
+          <span class="page">2</span>
+          <span class="page">3</span>
+      
+          <button>Next</button>
+        </div>
+      </body>
+    
+
+      <footer class="footer">
+        <p>© 2025 Онлайн Дэлгүүр</p>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>

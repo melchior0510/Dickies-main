@@ -1,0 +1,124 @@
+
+    body {
+      font-family: 'Inter', Arial, sans-serif;
+      background: #fff;
+      margin: 0;
+      padding: 40px;
+      color: #222;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+    }
+    .tabs {
+      display: flex;
+      gap: 24px;
+    }
+    .tab {
+      font-weight: 600;
+      color: #1a73e8;
+      text-decoration: none;
+      padding-bottom: 4px;
+      border-bottom: 2px solid transparent;
+      cursor: pointer;
+      transition: border 0.2s;
+    }
+    .tab.active {
+      border-bottom: 2px solid #1a73e8;
+    }
+    .dropdown {
+      background: #f6f8fa;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-size: 16px;
+      color: #222;
+      cursor: pointer;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    th, td {
+      padding: 14px 12px;
+      text-align: left;
+    }
+    th {
+      background: #f6f8fa;
+      font-weight: 600;
+      font-size: 15px;
+      color: #888;
+      border-bottom: 1px solid #eaeaea;
+    }
+    td {
+      font-size: 15px;
+      border-bottom: 1px solid #f0f0f0;
+      vertical-align: middle;
+    }
+    tr:last-child td {
+      border-bottom: none;
+    }
+    .product-img {
+      width: 36px;
+      height: 36px;
+      object-fit: contain;
+      vertical-align: middle;
+      margin-right: 10px;
+      border-radius: 8px;
+      background: #f6f8fa;
+      border: 1px solid #eee;
+    }
+    .status {
+      display: inline-block;
+      padding: 4px 16px;
+      border-radius: 16px;
+      font-size: 14px;
+      font-weight: 600;
+      text-align: center;
+    }
+    .status.complete {
+      background: #e6f9f0;
+      color: #32b768;
+    }
+    .status.pending {
+      background: #fff7e6;
+      color: #f7b731;
+    }
+    .status.canceled {
+      background: #ffeaea;
+      color: #eb3b5a;
+    }
+    .pagination {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      margin-top: 18px;
+    }
+    .pagination button, .pagination .page {
+      background: #f6f8fa;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 15px;
+      color: #222;
+      min-width: 36px;
+      transition: background 0.2s;
+    }
+    .pagination .active {
+      background: #1a73e8;
+      color: #fff;
+      font-weight: 600;
+    }
+    .entries-info {
+      margin-top: 12px;
+      color: #888;
+      font-size: 14px;
+    }
+  

@@ -1,0 +1,110 @@
+<!-- categories.html -->
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Categories</title>
+  <link rel="stylesheet" href="admin-style.css">
+  <link rel="stylesheet" href="categories.css">
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>Admin</h2>
+      <ul>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li class="active"><a href="categories.html">Product Categories</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="orders.html">Orders</a></li>
+        <li><a href="payments.html">Payments</a></li>
+        <li><a href="customers.html">Customers</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="login.html">Log In</a></li>
+      </ul>
+    </aside>
+    <main class="main-content">
+      <header class="top-bar">
+        <h1>Product Categories</h1>
+    
+
+      <div class="category-actions">
+
+  <!-- Шинэ ангилал нэмэх форм -->
+  <div class="category-form">
+    <h2>Шинэ ангилал нэмэх</h2>
+    <form action="#" method="POST">
+      <label for="categoryName">Ангиллын нэр:</label>
+      <input type="text" id="categoryName" name="categoryName" required>
+
+      <button type="submit">Нэмэх</button>
+    </form>
+  </div>
+
+  
+  <section style="margin-top: 78px;">
+    <strong>Products Search:</strong>
+  
+    <div class="product-search">
+      <form action="#" method="GET">
+        <input type="text" id="searchProduct" name="searchProduct"  required>
+        <button type="submit">Хайх</button>
+      </form>
+    </div>
+  </section>
+  
+
+
+
+</div>
+<br><hr></hr>
+
+<table style="width: 100%; margin: 10px; padding-top: 10px; border-collapse: collapse;">
+  <thead>
+    <tr>
+      <th style="width: 5px;border: 1px solid #ccc; padding: 8px;">№</th>
+      <th style="text-align: left; width: 950px; padding-left: 10px; border: 1px solid #ccc;">Category</th>
+      <th style=" border: 1px solid #ccc; padding: 8px;"></th>
+      <td style="border: 1px solid #ccc; padding: 8px;"></td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border: 1px solid #ccc; padding: 8px;">1</td>
+      <td style="width: 500px; padding-left: 10px; border: 1px solid #ccc;">Man</td>
+      <td style="border: 1px solid #ccc; text-align: center; padding: 8px;">
+        <button>Edit</button>
+      </td>
+      <td style="border: 1px solid #ccc; text-align: center; padding: 8px;">
+        <button>🗑️</button>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ccc; padding: 8px;">2</td>
+      <td style="width: 500px; padding-left: 10px; border: 1px solid #ccc;">Woman</td>
+      <td style="border: 1px solid #ccc; text-align: center; padding: 8px;">
+        <button>Edit</button>
+      </td>
+      <td style="border: 1px solid #ccc; text-align: center; padding: 8px;">
+        <button>🗑️</button>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ccc; padding: 8px;">3</td>
+      <td style="width: 500px; padding-left: 10px; border: 1px solid #ccc;">Kid</td>
+      <td style="border: 1px solid #ccc; text-align: center; padding: 8px;">
+        <button>Edit</button>
+      </td>
+      <td style="border: 1px solid #ccc; text-align: center; padding: 8px;">
+        <button>🗑️</button>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+      <footer class="footer">
+        <p>© 2025 Онлайн Дэлгүүр</p>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
